@@ -20,19 +20,4 @@ public class BoatRepositoryImpl implements BoatRepository {
         MongoCollection<Document> collection = database.getCollection("boats");
         collection.insertOne(boat.toDocument());
     }
-
-    private Boat documentToBoat(Document document) {
-        return new Boat(
-                document.getObjectId("_id"),
-                document.getString("boatId"),
-                new Location(
-                        document.get("location", Document.class).getDouble("latitude"),
-                        document.get("location", Document.class).getDouble("longitude")
-                ),
-                new Location(
-                        document.get("destination", Document.class).getDouble("latitude"),
-                        document.get("destination", Document.class).getDouble("longitude")
-                )
-        );
-    }
 }

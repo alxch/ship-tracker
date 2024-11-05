@@ -35,9 +35,7 @@ public class MongodbConfig {
                 .build();
 
         MongoClient mongoClient = MongoClients.create(settings);
-        MongoDatabase db = mongoClient.getDatabase("ShipTracker");
-
-        return db;
+        return mongoClient.getDatabase("ShipTracker");
     }
 
     private static void createTimeSeriesCollectionIfNotExists(MongoDatabase db, String collectionName) {
