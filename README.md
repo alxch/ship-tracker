@@ -40,19 +40,3 @@ Run the simulation to update each boat's position toward its destination.
 ```bash
 curl -X POST http://localhost:7070/simulate
 ```
-
-### 6. Get Simulation Status
-Retrieve the current status of the simulation, including the positions of each boat.
-
-```bash
-curl -X GET http://localhost:7070/simulation/status
-```
-
-### 7. Reset Simulation
-Reset the simulation and clear all boat positions to prepare for a new run.
-
-```bash
-curl -X POST http://localhost:7070/simulation/reset
-```
-
-These commands provide a full suite for managing ports, adding boats, and running the ship tracking simulation. You can adjust the endpoints and payloads as needed.
