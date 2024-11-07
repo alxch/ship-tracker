@@ -4,7 +4,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.shiptracker.config.MongodbConfig;
 import com.mongodb.shiptracker.model.Boat;
-import com.mongodb.shiptracker.model.Location;
 import org.bson.Document;
 
 

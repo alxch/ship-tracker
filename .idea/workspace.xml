@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115c4bf3-1fbc-4b97-aded-8a46f5820b12" name="Changes" comment="Init">
+    <list default="true" id="115c4bf3-1fbc-4b97-aded-8a46f5820b12" name="Changes" comment="Minor cleanup">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/ShipTrackerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/controller/ShipTrackerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/model/BoatRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/service/BoatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/service/DistanceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/service/PortService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/ShipTracker.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/config/MongodbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/config/MongodbConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/model/Boat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/model/Boat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/repository/BoatRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/repository/BoatRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/repository/TimeSeriesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/repository/TimeSeriesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/repository/TimeSeriesRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mongodb/shiptracker/repository/TimeSeriesRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +37,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "timotheekelly"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/timotheekelly/ship-tracker.git",
+    "accountId": "61448c97-0341-4446-b686-ae7539d2f624"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -120,7 +144,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730718331436</updated>
-      <workItem from="1730718332452" duration="27315000" />
+      <workItem from="1730718332452" duration="51708000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -130,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730825666892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Minor cleanup">
+      <option name="closed" value="true" />
+      <created>1730825823473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730825823473</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +170,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="Minor cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,22 +5,42 @@ import org.bson.types.ObjectId;
 
 public class Boat {
     private ObjectId _id;
-    private final String boatId;
+    private String boatId;
     private Location location;
     private Location destination;
+    private String startPort;
+    private String endPort;
 
-    public Boat(ObjectId _id, String boatId, Location location, Location destination) {
-        this._id = _id;
-        this.boatId = boatId;
-        this.location = location;
-        this.destination = destination;
-    }
+    public Boat () {}
 
     public Boat(String boatId, Location location, Location destination) {
         this._id = new ObjectId();
         this.boatId = boatId;
         this.location = location;
         this.destination = destination;
+    }
+
+    public String getStartPort() {
+        return startPort;
+    }
+
+    public void setStartPort(String startPort) {
+        this.startPort = startPort;
+    }
+
+    public String getEndPort() {
+        return endPort;
+    }
+
+    public void setEndPort(String endPort) {
+        this.endPort = endPort;
+    }
+
+    public Boat(String boatId, String startPort, String endPort) {
+        this._id = new ObjectId();
+        this.boatId = boatId;
+        this.startPort = startPort;
+        this.endPort = endPort;
     }
 
     public ObjectId getId() {
