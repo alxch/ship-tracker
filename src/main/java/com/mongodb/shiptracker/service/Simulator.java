@@ -48,7 +48,7 @@ public class Simulator {
                     boat.getLocation().getLongitude() == boat.getDestination().getLongitude());
 
             try {
-                Thread.sleep(1000); // Pause for 1 second between steps to simulate real-time updates
+                Thread.sleep(100); // Pause for 1 second between steps to simulate real-time updates
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

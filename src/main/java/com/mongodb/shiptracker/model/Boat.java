@@ -87,7 +87,7 @@ public class Boat {
         double destLatitude = destination.getLatitude();
         double destLongitude = destination.getLongitude();
 
-        double nauticalMilesPerHour = 20;
+        double nauticalMilesPerHour = 40;
         double stepSizeInDegrees = nauticalMilesPerHour / 60.0; // Convert nautical miles to degrees
 
         // Calculate direction
