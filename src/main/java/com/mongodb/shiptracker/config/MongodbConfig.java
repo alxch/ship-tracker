@@ -13,14 +13,20 @@ import com.mongodb.client.model.TimeSeriesGranularity;
 import com.mongodb.client.model.TimeSeriesOptions;
 
 public class MongodbConfig {
-    private static final String CONNECTION_STRING = "";
+    private static final String CONNECTION_STRING = "mongodb://127.0.0.1:27017/";
+    private static final String DB_NAME = "ShipTracker";
+    private static final String COLLECTION_NAME = "shipLocations";
+    private static final String TIME_FIELD = "timestamp";
+    private static final String META_FIELD = "boatId";
+    private static final TimeSeriesGranularity GRANULARITY = TimeSeriesGranularity.SECONDS;
+    
     private static MongoDatabase database;
 
     public static MongoDatabase getDatabase() {
         if (database == null) {
             database = initializeDatabase();
         }
-        createTimeSeriesCollectionIfNotExists(database, "shipLocations");
+        createTimeSeriesCollectionIfNotExists(database, COLLECTION_NAME);
 
         return database;
     }
@@ -35,7 +41,7 @@ public class MongodbConfig {
                 .build();
 
         MongoClient mongoClient = MongoClients.create(settings);
-        MongoDatabase db = mongoClient.getDatabase("ShipTracker");
+        MongoDatabase db = mongoClient.getDatabase(DB_NAME);
 
         return db;
     }
@@ -50,9 +56,9 @@ public class MongodbConfig {
             }
         }
 
-        TimeSeriesOptions timeSeriesOptions = new TimeSeriesOptions("timestamp")
-                .metaField("boatId")
-                .granularity(TimeSeriesGranularity.SECONDS);
+        TimeSeriesOptions timeSeriesOptions = new TimeSeriesOptions(TIME_FIELD)
+                .metaField(META_FIELD)
+                .granularity(GRANULARITY);
 
         CreateCollectionOptions collOptions = new CreateCollectionOptions().timeSeriesOptions(timeSeriesOptions);
 
